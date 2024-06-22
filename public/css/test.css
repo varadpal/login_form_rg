@@ -1,0 +1,185 @@
+/* 
+ul{
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    width: 200px;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(255,163,163);
+    background: linear-gradient(133deg, rgba(255,163,163,1) 0%, rgba(148,187,233,1) 100%);
+    margin-top: 30px;
+}
+
+.container{
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 50px 35px 10px 35px;
+}
+
+.container header{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.container .form-outer{
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-outer form{
+    display: flex;
+    width: 600%;
+}
+
+.form-outer form .page{
+    width: 100%;
+}
+
+.form-outer form .page .title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.form-outer form .page .field{
+    height: 45px; 
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    position: relative;
+}
+
+.form-outer form .page .field .label{
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+
+.form-outer form .page .field input{
+    height: 75%;
+    width: 75%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+form .page .field select{
+    width: 75%;
+    height: 75%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 12px;
+}
+
+form .page .field input[type="radio"]{
+    width: 5%;
+    margin: 0px 10px;
+    color: #000;
+}
+
+form .page .field textarea{
+    width: 75%;
+    resize: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+form .page .field input[type="number"]::-webkit-inner-spin-button,
+form .page .field input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* form .page .field .IELTS_Score{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    
+}
+
+form .page .field input[name="score"]{
+    
+    margin: 0px 5px;
+    padding: 0px 5px;
+    width: 20px;
+    height: 30px;
+} */
+
+.form-outer form .page .field button{
+    text-align: center;
+    
+    width: 50%;
+    height: 100%;
+    margin-top: -20px;
+    border: none;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    font-family: "League Spartan", sans-serif;
+
+    transition: 0.3s ease;
+}
+
+.form-outer form .page .field button:hover{
+    background-color: #fa0909;
+    color: #fff;
+    letter-spacing: 20px;
+}
+
+.form-outer form .page .btns button{
+    margin-top: -20px!important;
+}
+
+form .page .btns button .prev{
+    margin-right: 3px;
+    font-size: 16px;
+}
+
+form .page .btns button .next{
+    margin-left: 3px;
+}
+.form-outer form .page .name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img{
+    width: 80px;
+    margin: 30px 0px 5px 0px;
+}

@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #9fafca; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1 {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 8vh;
+  text-align: center;
+  color: #0e387a;
+  /* color: #3c6e71; */
+}
+
+.main {
+  box-sizing: border-box;
+  padding: 50px;
+  width: 130vh;
+  border: 2px solid #3c6e71;
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image {
+  justify-self: center;
+
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+
+.fa-solid {
+  color: #0e387a;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-solid:hover {
+  transform: scale(1.1);
+}
+
+.fa-solid:active {
+  color: #4d6b9f;
+}
+
+.UserDetails {
+  display: none;
+  flex-direction: column;
+  color: #ff003b;
+  /* visibility: visible; */
+}
+
+/* .UserDetails{
+    display: inline;
+}  */
+
+/* .UserDetails::after{
+    flex-direction: column;
+    color: #ff003b;
+    visibility: visible;
+    
+} 
+*/
+
+
+button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  color: #0e387a;
+  border: 2px solid #4d6b9f;
+  border-radius: 0px 10px 10px 0px;
+  /* border: none;
+    border-radius: 0px 10px 10px 0px; */
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+
+  align-self: end;
+
+  background-color: #ffff3f;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+button span {
+  position: relative;
+  z-index: 2;
+}
+
+button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  border-radius: 0px 7px 7px 0px;
+  transition: all 0.35s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover:after {
+  width: 100%;
+}
