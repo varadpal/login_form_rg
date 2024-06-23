@@ -1,257 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup Form</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    
-    <link rel="stylesheet" href="./public/css/test.css">
-</head>
-<body>
-    <div class="container">
-        <header>Login Form</header>
-        <div class="progress-bar">
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-        </div>
-        
-        <div class="form-outer">
-            <form action="#">
-                <div class="page">
-                    <img src="./public/images/profile.png" alt="">
-                    <div class="title">Basic Information:</div>
-                    
-                    <div class="name">
-                        <div class="field">
-                            <div class="label">First Name</div>
-                            <input type="text" name="" id="">
-                        </div>
-                        <div class="field">
-                            <div class="label">Last Name</div>
-                            <input type="text" name="" id="">
-                        </div>
-                    </div>
-                    
-                    <div class="field">
-                        <div class="label">Date of Birth</div>
-                        <input type="date" name="" id="">
-                    </div>
-                    <div class="field">
-                        <div class="label">Mobile Number</div>
-                        <input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                    </div>
-                    <div class="field">
-                        <div class="label">Email Address</div>
-                        <input type="email" name="" id="">
-                    </div>
-                    <div class="field">
-                        <button>Next</button>
-                    </div>
-                </div>
 
-                <div class="page">
-                    <img src="./public/images/book.png" alt="">
-                    <div class="title">Personal Details:</div>
-
-                    <div class="field">
-                        <div class="label">Current Address</div>
-                        <textarea name="" id=""></textarea> <!-- 180 x 50-->
-                    </div>
-                    <div class="field">
-                        <div class="label">Marital Status</div>
-                        <select name="" id="">
-                            <option value="married">Married</option>
-                            <option value="single">Single</option>
-                            <option value="divorced">Divorced</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <div class="label">Do You Have Passport?</div>
-                        <input type="radio" id="yes" name="passport" value="Yes">
-                        <label for="yes">Yes</label><br>
-                        <input type="radio" id="no" name="passport" value="No">
-                        <label for="no">No</label><br>
-                    </div>
-                    <div class="field">
-                        <div class="label">Father's Occupation</div>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="field">
-                        <div class="label">Mother's Occupation</div>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="field">
-                        <div class="label">Work Experience</div>
-                        <textarea name="" id=""></textarea> <!-- 180 x 50-->
-                    </div>
-                    
-                    <div class="field">
-                        <button class="prev-1 prev">Previous</button>
-                        <button class="next-1 next">Next</button>
-                    </div>
-                </div>
-
-                <div class="page">
-                    <img src="./public/images/graduation-hat.png" alt="">
-                    <div class="title">About Intended Program:</div>
-                    <div class="field">
-                        <div class="label">Program Interested In:</div>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="field">
-                        <div class="label">Preffered Country</div>
-                        <select name="preffered_country" id="preffered_country">
-                            <option value="Australia">Australia</option>
-                            <option value="Canada">Canada</option>
-                            <option value="USA">United States</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="Ireland">Ireland</option>
-                            <option value="Germany">Germany</option>
-                            <option value="Belarus">Belarus</option>
-                            <option value="France">France</option>
-                            <option value="Dubai">Dubai</option>
-                            <option value="Singapore">Singapore</option>
-                            <option value="Malta">Malta</option>
-                            <option value="Azerbaijan">Azerbaijan</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <select name="funds" id="funds">
-                            <option value="parent">Parents Or Gaurdian</option>
-                            <option value="loan">Loan</option>
-                            <option value="self">Self</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <div class="label">About Previous Visa History</div>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div class="field">
-                        <button class="prev-2 prev">Previous</button>
-                        <button class="next-2 next">Next</button>
-                    </div>
-                </div>
-
-                <div class="page">
-                    <img src="./public/images/book-stack.png" alt="">
-                    <div class="title">Educational History:</div>
-                    <div class="field">
-                        <div class="label">Any Gap</div>
-                        <input type="text" name="" id="" placeholder="Yes, 1 year after 12th">
-                    </div>
-                    <div class="field">
-                        <div class="label">Percentage In 10th Grade</div>
-                        <input type="number">
-                    </div>
-                    <div class="field">
-                        <div class="label">Percentage In 12th Grade</div>
-                        <input type="number">
-                    </div>
-                    <div class="field">
-                        <div class="label">Percentage In Bachelors</div>
-                        <input type="number">
-                    </div>
-                    <div class="field">
-                        <div class="label">Percentage In Masters</div>
-                        <input type="number">
-                    </div>
-                    <div class="field">
-                        <button class="prev-3 prev">Previous</button>
-                        <button class="next-3 next">Next</button>
-                    </div>
-                </div>
-
-                <div class="page">
-                    <img src="./public/images/eng.png" alt="">
-                    <div class="title">Competitive Examinations:</div>
-                    <div class="field">
-                        <div class="label">IELTS/TOEFL/PTE</div>
-                        <!-- <div class="IELTS_Score">
-                            <div class="1">
-                                <label for="listening">Listening</label>
-                                <input type="number" id="listening" min="0" max="9" step="1" name="score"><br>
-                            </div>
-                            <div class="2">
-                                <label for="speaking">Speaking</label>
-                                <input type="number" id="speaking" min="0" max="9" step="1" name="score"><br>
-                            </div>
-                            <div class="3">
-                                <label for="reading">Reading</label>
-                                <input type="number" id="reading" min="0" max="9" step="1" name="score"><br>
-                            </div>
-                            <div class="4">
-                                <label for="writing">Writing</label>
-                                <input type="number" id="writing" min="0" max="9" step="1" name="score"><br>
-                            </div>
-                        </div> -->
-                        
-                        <label for="listening">Listening</label>
-                        <input type="number" id="listening" min="0" max="9" step="1" name="score">
-                        <label for="speaking">Speaking</label>
-                        <input type="number" id="speaking" min="0" max="9" step="1" name="score">
-                        <label for="reading">Reading</label>
-                        <input type="number" id="reading" min="0" max="9" step="1" name="score">
-                        <label for="writing">Writing</label>
-                        <input type="number" id="writing" min="0" max="9" step="1" name="score"><br>
-                    </div>
-                    <div class="field">
-                        <div class="label">GRE/GMAT Score</div>
-                        <input type="number" placeholder="320">
-                    </div>
-                    <div class="field">
-                        <div class="label">SAT/ACT Score</div>
-                        <input type="number" placeholder="220">
-                    </div>
-                    <div class="field">
-                        <button class="prev-4 prev">Previous</button>
-                        <button class="next-4 next">Next</button>
-                    </div>
-                </div>
-
-                <div class="page">
-                    <img src="./public/images/research.png" alt="">
-                    <div class="title">Additional:</div>
-                    <div class="field">
-                        <div class="label">How Did You Hear About Us</div>
-                        <select name="reference" id="reference">
-                            <option value="instagram">Instagram</option>
-                            <option value="facebook">Facebook</option>
-                            <option value="google">Google</option>
-                            <option value="reference">Friends/Relatives</option>
-                            <option value="others">Others</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <div class="label">Remarks</div>
-                        <textarea name="" id=""></textarea> <!-- 180 x 50-->
-                    </div>
-                    <div class="field">
-                        <button class="prev-5 prev">Previous</button>
-                        <button class="Submit">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
+    <link rel="stylesheet" href="./public/css/test.css" />
+  </head>
+  <body>
+    <div id="bg">
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
     </div>
-    
-</body>
+
+
+    <div class="another-one">
+      <header>
+        <img src="./public/images/Cropped Removed background Logo.png" alt="">
+        <h1>Login Form</h1>
+      </header>
+      <div class="progress-bar">
+        <div class="step">
+          <p>User</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Personal</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Program</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Education</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>English</p>
+          <div class="bullet">
+            <span>5</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Optional</p>
+          <div class="bullet">
+            <span>6</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="form-outer">
+          <form action="#">
+            <div class="page slidepage">
+              <img src="./public/images/profile.png" alt="" />
+              <div class="title">Basic Information:</div>
+
+              <div class="name">
+                <div class="field">
+                  <div class="label">First Name</div>
+                  <input type="text" name="" id="" />
+                </div>
+                <div class="field">
+                  <div class="label">Last Name</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="label">Date of Birth</div>
+                <input type="date" name="" id="" />
+              </div>
+              <div class="field">
+                <div class="label">Mobile Number</div>
+                <input
+                  type="tel"
+                  name=""
+                  id=""
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                />
+              </div>
+              <div class="field">
+                <div class="label">Email Address</div>
+                <input type="email" name="" id="" />
+              </div>
+              <div class="field nextBtn">
+                <button>Next</button>
+              </div>
+            </div>
+
+            <div class="page">
+              <img src="./public/images/book.png" alt="" />
+              <div class="title">Personal Details:</div>
+
+              <div class="field">
+                <div class="label">Current Address</div>
+                <textarea name="" id=""></textarea>
+                <!-- 180 x 50-->
+              </div>
+              <div class="field">
+                <div class="label">Marital Status</div>
+                <select name="" id="">
+                  <option value="married">Married</option>
+                  <option value="single">Single</option>
+                  <option value="divorced">Divorced</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="label">Do You Have Passport?</div>
+                <input type="radio" id="yes" name="passport" value="Yes" />
+                <label for="yes">Yes</label><br />
+                <input type="radio" id="no" name="passport" value="No" />
+                <label for="no">No</label><br />
+              </div>
+              <div class="field">
+                <div class="label">Father's Occupation</div>
+                <input type="text" name="" id="" />
+              </div>
+              <div class="field">
+                <div class="label">Mother's Occupation</div>
+                <input type="text" name="" id="" />
+              </div>
+              <div class="field">
+                <div class="label">Work Experience</div>
+                <textarea name="" id=""></textarea>
+                <!-- 180 x 50-->
+              </div>
+
+              <div class="field">
+                <button class="prev-1 prev">Previous</button>
+                <button class="next-1 next">Next</button>
+              </div>
+            </div>
+
+            <div class="page">
+              <img src="./public/images/graduation-hat.png" alt="" />
+              <div class="title">About Intended Program:</div>
+              <div class="field">
+                <div class="label">Program Interested In:</div>
+                <input type="text" name="" id="" />
+              </div>
+              <div class="field">
+                <div class="label">Preffered Country</div>
+                <select name="preffered_country" id="preffered_country">
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="USA">United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="France">France</option>
+                  <option value="Dubai">Dubai</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Malta">Malta</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                </select>
+              </div>
+              <div class="field">
+                <select name="funds" id="funds">
+                  <option value="parent">Parents Or Gaurdian</option>
+                  <option value="loan">Loan</option>
+                  <option value="self">Self</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="label">About Previous Visa History</div>
+                <input type="text" name="" id="" />
+              </div>
+              <div class="field">
+                <button class="prev-2 prev">Previous</button>
+                <button class="next-2 next">Next</button>
+              </div>
+            </div>
+
+            <div class="page">
+              <img src="./public/images/book-stack.png" alt="" />
+              <div class="title">Educational History:</div>
+              <div class="field">
+                <div class="label">Any Gap</div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Yes, 1 year after 12th"
+                />
+              </div>
+              <div class="field">
+                <div class="label">Percentage In 10th Grade</div>
+                <input type="number" />
+              </div>
+              <div class="field">
+                <div class="label">Percentage In 12th Grade</div>
+                <input type="number" />
+              </div>
+              <div class="field">
+                <div class="label">Percentage In Bachelors</div>
+                <input type="number" />
+              </div>
+              <div class="field">
+                <div class="label">Percentage In Masters</div>
+                <input type="number" />
+              </div>
+              <div class="field">
+                <button class="prev-3 prev">Previous</button>
+                <button class="next-3 next">Next</button>
+              </div>
+            </div>
+
+            <div class="page page5">
+              <img src="./public/images/eng.png" alt="" />
+              <div class="title">Competitive Examinations:</div>
+              
+              <div class="field">
+                <div class="label">IELTS Score</div>
+                
+                <div class="scores">
+                    <div name= "listening" class="listening">
+                        <p>Listening</p>
+                        <input type="number" >
+                    </div>
+                    <div name= "speaking" class="speaking">
+                        <p>Speaking</p>
+                        <input type="number" >
+                    </div>
+                    <div name= "reading" class="reading">
+                        <p>Reading</p>
+                        <input type="number" >
+                    </div>
+                    <div name= "writing" class="writing">
+                        <p>Writing</p>
+                        <input type="number" >
+                    </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="label">GRE/GMAT Score</div>
+                <input type="number" placeholder="320" />
+              </div>
+              
+              <div class="field">
+                <div class="label">SAT/ACT Score</div>
+                <input type="number" placeholder="220" />
+              </div>
+              
+              <div class="field">
+                <button class="prev-4 prev">Previous</button>
+                <button class="next-4 next">Next</button>
+              </div>
+            </div>
+
+            <div class="page page6">
+              <img src="./public/images/research.png" alt="" />
+              <div class="title">Additional:</div>
+              <div class="field">
+                <div class="label">How Did You Hear About Us</div>
+                <select name="reference" id="reference">
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="google">Google</option>
+                  <option value="reference">Friends/Relatives</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="label">Remarks</div>
+                <textarea name="" id=""></textarea>
+                <!-- 180 x 50-->
+              </div>
+              <div class="field">
+                <button class="prev-5 prev">Previous</button>
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+  </body>
 </html>

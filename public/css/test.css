@@ -20,26 +20,49 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: rgb(255,163,163);
-    background: linear-gradient(133deg, rgba(255,163,163,1) 0%, rgba(148,187,233,1) 100%);
-    margin-top: 30px;
+    /* min-height: 100vh; */
+    background: #3586ff;
+    /* background: rgba(255,163,163,1); */
+    background: linear-gradient(180deg, #3586ff 50%, #fff 50%);
+    /* background: src(#bg); */
+    
+    /* padding-bottom: 40px; */
+    margin-bottom: 20px;
 }
 
 .container{
-    width: 400px;
-    background: #fff;
+    width: calc(100%);
+    background: #FFF7FC;
     border-radius: 5px;
     text-align: center;
     align-items: center;
-    padding: 50px 35px 10px 35px;
+    /* padding: 0px 35px 10px 25px; */
+    padding: 0;
 }
 
-.container header{
+.another-one{
+    width: 40%;
+    background: #FFF7FC;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding-top: 40px;
+    margin-top: 20px;
+
+    z-index: 1;
+}
+
+.another-one header img{
+    margin: 0 0 10px 0;
+    height: 75px;
+    width: auto;
+}
+
+.another-one header h1{
     font-family: "League Spartan", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 30px;
+    font-size: 34px;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin: 0 0 30px 0;
@@ -50,24 +73,110 @@ body{
     overflow: hidden;
 }
 
+
+.another-one .progress-bar{
+    display: flex;
+    padding: 0;
+}
+
+.another-one .progress-bar .step{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.progress-bar .step p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.progress-bar .step .bullet{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border: 3px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+    display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -435%;
+    height: 3px;
+    width: 400%;
+    background: #262626;
+}
+
+.progress-bar .step .bullet:after{
+    background: palevioletred;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 25%;
+    animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.progress-bar .step span{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-bar .step .check{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 .form-outer form{
     display: flex;
     width: 600%;
 }
 
 .form-outer form .page{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 1%;
+    width: 10px;
+    width: fit-content; 
+    transition: margin-left 0.3s ease-in-out;
 }
 
 .form-outer form .page .title{
     font-family: "Montserrat", sans-serif;
+    width: fit-content;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
 .form-outer form .page .field{
     height: 45px; 
-    width: 100%;
+    width: 60%;
     margin: 30px 0;
     display: flex;
     position: relative;
@@ -80,7 +189,7 @@ body{
 }
 
 .form-outer form .page .field input{
-    height: 75%;
+    height: 100%;
     width: 75%;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -89,8 +198,8 @@ body{
 }
 
 form .page .field select{
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 100%;
     border: 1px solid lightgray;
     border-radius: 5px;
     padding-left: 12px;
@@ -104,6 +213,7 @@ form .page .field input[type="radio"]{
 
 form .page .field textarea{
     width: 75%;
+    height: 125%;
     resize: none;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -115,6 +225,26 @@ form .page .field input[type="number"]::-webkit-inner-spin-button,
 form .page .field input[type="number"]::-webkit-outer-spin-button{
     -webkit-appearance: none;
     margin: 0;
+}
+
+.form-outer form .page5{
+    width: min-content;
+}
+
+.form-outer .page5 .field input[type="number"]{
+    width: 200px;
+}
+
+.form-outer .page5 .field .scores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.form-outer .page5 .field .scores input[type="number"]{
+    width: 85px;
+    text-align: center;
+    padding: 0;
 }
 
 /* form .page .field .IELTS_Score{
@@ -135,12 +265,29 @@ form .page .field input[name="score"]{
     height: 30px;
 } */
 
+.form-outer form .page6{
+    width: min-content;
+}
+
+.form-outer .page6 .field select{
+    width: 250px;
+    text-align: center;
+    padding: 0;
+}
+
+.form-outer .page6 .field textarea{
+    width: 500px;
+}
+
+
 .form-outer form .page .field button{
     text-align: center;
     
-    width: 50%;
+    width: max-content;
+    padding: 0 10px;
     height: 100%;
-    margin-top: -20px;
+    /* margin-top: -20px; */
+    margin-right: 25px;
     border: none;
     background-color: pink;
     border-radius: 10px;
@@ -159,7 +306,7 @@ form .page .field input[name="score"]{
 .form-outer form .page .field button:hover{
     background-color: #fa0909;
     color: #fff;
-    letter-spacing: 20px;
+    /* letter-spacing: 12px; */
 }
 
 .form-outer form .page .btns button{
@@ -180,6 +327,104 @@ form .page .btns button .next{
 }
 
 img{
-    width: 80px;
+    /* align-self: center; */
+    width: 100px;
     margin: 30px 0px 5px 0px;
 }
+
+
+
+#bg{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3586ff;
+    overflow: hidden;
+    z-index: 0;
+  }
+  #bg .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px;
+  }
+  #bg .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  #bg .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  #bg .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  #bg .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+
+
+
+@media screen and (max-width: 768px){
+    .another-one{
+        width: 90%;
+        margin: 0;
+    }
+
+    .progress-bar .step .bullet:before,
+    .progress-bar .step .bullet:after{
+        right: -300%;
+        height: 2px;
+        width: 250%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .another-one{
+        width: 90%;
+        margin: 0;
+    }
+
+    .progress-bar .step .bullet:before,
+    .progress-bar .step .bullet:after{
+        right: -450%;
+        height: 2px;
+        width: 375%;
+    }
+}
+
