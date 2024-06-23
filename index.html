@@ -92,12 +92,12 @@
 
               <div class="name">
                 <div class="field">
-                  <div class="label">First Name</div>
-                  <input type="text" name="" id="" />
+                  <div class="label">First Name*</div>
+                  <input type="text" name="" id="" required placeholder="required"/>
                 </div>
                 <div class="field">
-                  <div class="label">Last Name</div>
-                  <input type="text" name="" id="" />
+                  <div class="label">Last Name*</div>
+                  <input type="text" name="" id="" required placeholder="required"/>
                 </div>
               </div>
 
@@ -106,12 +106,14 @@
                 <input type="date" name="" id="" />
               </div>
               <div class="field">
-                <div class="label">Mobile Number</div>
+                <div class="label">Mobile Number*</div>
                 <input
                   type="tel"
                   name=""
                   id=""
                   pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  required
+                  placeholder="required"
                 />
               </div>
               <div class="field">
@@ -142,10 +144,10 @@
               </div>
               <div class="field">
                 <div class="label">Do You Have Passport?</div>
-                <input type="radio" id="yes" name="passport" value="Yes" />
-                <label for="yes">Yes</label><br />
-                <input type="radio" id="no" name="passport" value="No" />
-                <label for="no">No</label><br />
+                <select name="" id="">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
               </div>
               <div class="field">
                 <div class="label">Father's Occupation</div>
@@ -192,6 +194,7 @@
                 </select>
               </div>
               <div class="field">
+                <div class="label">Source Of Funds</div>
                 <select name="funds" id="funds">
                   <option value="parent">Parents Or Gaurdian</option>
                   <option value="loan">Loan</option>
@@ -252,19 +255,19 @@
                 <div class="scores">
                     <div name= "listening" class="listening">
                         <p>Listening</p>
-                        <input type="number" >
+                        <input type="number" placeholder="6.5">
                     </div>
                     <div name= "speaking" class="speaking">
                         <p>Speaking</p>
-                        <input type="number" >
+                        <input type="number" placeholder="6.5">
                     </div>
                     <div name= "reading" class="reading">
                         <p>Reading</p>
-                        <input type="number" >
+                        <input type="number" placeholder="6.5">
                     </div>
                     <div name= "writing" class="writing">
                         <p>Writing</p>
-                        <input type="number" >
+                        <input type="number" placeholder="6.5">
                     </div>
                 </div>
               </div>
@@ -301,7 +304,6 @@
               <div class="field">
                 <div class="label">Remarks</div>
                 <textarea name="" id=""></textarea>
-                <!-- 180 x 50-->
               </div>
               <div class="field">
                 <button class="prev-5 prev">Previous</button>

@@ -94,6 +94,10 @@ body{
     margin-bottom: 8px;
 }
 
+.another-one .progress-bar .step p.active{
+    color: palevioletred;
+}
+
 .progress-bar .step .bullet{
     position: relative;
     height: 25px;
@@ -101,6 +105,12 @@ body{
     border: 3px solid #000;
     display: inline-block;
     border-radius: 50%;
+    transition: 0.2s;
+}
+
+.progress-bar .step .bullet.active{
+    border-color: palevioletred;
+    background-color: palevioletred;
 }
 
 .progress-bar .step:last-child .bullet:before,
@@ -119,7 +129,7 @@ body{
     background: #262626;
 }
 
-.progress-bar .step .bullet:after{
+.progress-bar .step .bullet.active:after{
     background: palevioletred;
     transform: scaleX(0);
     transform-origin: left;
@@ -133,13 +143,17 @@ body{
     }
 }
 
-.progress-bar .step span{
+.progress-bar .step .bullet span{
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.progress-bar .step .bullet.active span{
+    display: none;
 }
 
 .progress-bar .step .check{
@@ -151,6 +165,11 @@ body{
     display: none;
 }
 
+.progress-bar .step .check.active{
+    display: block;
+    color: #fff;
+}
+
 .form-outer form{
     display: flex;
     width: 600%;
@@ -159,7 +178,7 @@ body{
 .form-outer form .page{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: baseline;
     padding-left: 1%;
     width: 10px;
     width: fit-content; 
@@ -194,7 +213,7 @@ body{
     border: 1px solid lightgray;
     border-radius: 5px;
     font-size: 14px;
-    padding-left: 12px;
+    padding-left: 10px;
 }
 
 form .page .field select{
@@ -214,6 +233,7 @@ form .page .field input[type="radio"]{
 form .page .field textarea{
     width: 75%;
     height: 125%;
+    padding-top: 10px;
     resize: none;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -285,27 +305,27 @@ form .page .field input[name="score"]{
     
     width: max-content;
     padding: 0 10px;
-    height: 100%;
+    height: 85%;
     /* margin-top: -20px; */
     margin-right: 25px;
     border: none;
-    background-color: pink;
+    background-color: #3586ff;
+    color: #fff;
     border-radius: 10px;
     font-size: 24px;
-    font-weight: 800;
-    letter-spacing: 10px;
+    font-weight: 600;
+    letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
     margin-bottom: 20px;
 
-    font-family: "League Spartan", sans-serif;
+    font-family: "Montserrat", sans-serif;
 
     transition: 0.3s ease;
 }
 
 .form-outer form .page .field button:hover{
-    background-color: #fa0909;
-    color: #fff;
+    background-color: #ff3535;
     /* letter-spacing: 12px; */
 }
 

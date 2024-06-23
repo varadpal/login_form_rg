@@ -1,39 +1,302 @@
 <%- include("header.ejs"); %>
 
-<div class="container1">
-  <h1>Signup Form</h1>
-  
-  <div class="main">
-    <div class="image 1" id="details">
-      <i class="fa-solid fa-user fa-5x"></i>
-      <form class="UserDetails" >
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text">
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="number" name="dob">
-        <label for="number">Contact Number</label>
-        <input type="tel" id="number" name="number">
-        <label for="email">Email Id</label>
-        <input type="email" id="email" name="email" placeholder="abc@example.com">
+<div id="bg">
+  <div class="air air1"></div>
+  <div class="air air2"></div>
+  <div class="air air3"></div>
+  <div class="air air4"></div>
+</div>
+
+<div class="another-one">
+  <header>
+    <img src="/images/Cropped Removed background Logo.png" alt="" />
+    <h1>Login Form</h1>
+  </header>
+  <div class="progress-bar">
+    <div class="step">
+      <p>User</p>
+      <div class="bullet">
+        <span>1</span>
+      </div>
+      <div class="check fas fa-check"></div>
+    </div>
+    <div class="step">
+      <p>Personal</p>
+      <div class="bullet">
+        <span>2</span>
+      </div>
+      <div class="check fas fa-check"></div>
+    </div>
+    <div class="step">
+      <p>Program</p>
+      <div class="bullet">
+        <span>3</span>
+      </div>
+      <div class="check fas fa-check"></div>
+    </div>
+    <div class="step">
+      <p>Education</p>
+      <div class="bullet">
+        <span>4</span>
+      </div>
+      <div class="check fas fa-check"></div>
+    </div>
+    <div class="step">
+      <p>English</p>
+      <div class="bullet">
+        <span>5</span>
+      </div>
+      <div class="check fas fa-check"></div>
+    </div>
+    <div class="step">
+      <p>Optional</p>
+      <div class="bullet">
+        <span>6</span>
+      </div>
+      <div class="check fas fa-check"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="form-outer">
+      <form action="#">
+        <div class="page slidepage">
+          <img src="/images/profile.png" alt="" />
+          <div class="title">Basic Information:</div>
+
+          <div class="name">
+            <div class="field">
+              <div class="label">First Name*</div>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="required"
+              />
+            </div>
+            <div class="field">
+              <div class="label">Last Name*</div>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="required"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label">Date of Birth</div>
+            <input type="date" name="dob" id="dob" />
+          </div>
+          <div class="field">
+            <div class="label">Mobile Number*</div>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="required"
+            />
+          </div>
+          <div class="field">
+            <div class="label">Email Address</div>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="field nextBtn">
+            <button class="next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <img src="/images/book.png" alt="" />
+          <div class="title">Personal Details:</div>
+
+          <div class="field">
+            <div class="label">Current Address</div>
+            <textarea name="" id=""></textarea>
+            <!-- 180 x 50-->
+          </div>
+          <div class="field">
+            <div class="label">Marital Status</div>
+            <select name="" id="">
+              <option value="married">Married</option>
+              <option value="single">Single</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Do You Have Passport?</div>
+            <select name="" id="">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Father's Occupation</div>
+            <input type="text" name="" id="" />
+          </div>
+          <div class="field">
+            <div class="label">Mother's Occupation</div>
+            <input type="text" name="" id="" />
+          </div>
+          <div class="field">
+            <div class="label">Work Experience</div>
+            <textarea name="" id=""></textarea>
+            <!-- 180 x 50-->
+          </div>
+
+          <div class="field">
+            <button class="prev-1 prev">Previous</button>
+            <button class="next-1 next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <img src="/images/graduation-hat.png" alt="" />
+          <div class="title">About Intended Program:</div>
+          <div class="field">
+            <div class="label">Program Interested In:</div>
+            <input type="text" name="" id="" />
+          </div>
+          <div class="field">
+            <div class="label">Preffered Country</div>
+            <select name="preffered_country" id="preffered_country">
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              <option value="USA">United States</option>
+              <option value="UK">United Kingdom</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Germany">Germany</option>
+              <option value="Belarus">Belarus</option>
+              <option value="France">France</option>
+              <option value="Dubai">Dubai</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Malta">Malta</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Source Of Funds</div>
+            <select name="funds" id="funds">
+              <option value="parent">Parents Or Gaurdian</option>
+              <option value="loan">Loan</option>
+              <option value="self">Self</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">About Previous Visa History</div>
+            <input type="text" name="" id="" />
+          </div>
+          <div class="field">
+            <button class="prev-2 prev">Previous</button>
+            <button class="next-2 next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <img src="/images/book-stack.png" alt="" />
+          <div class="title">Educational History:</div>
+          <div class="field">
+            <div class="label">Any Gap</div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Yes, 1 year after 12th"
+            />
+          </div>
+          <div class="field">
+            <div class="label">Percentage In 10th Grade</div>
+            <input type="number" />
+          </div>
+          <div class="field">
+            <div class="label">Percentage In 12th Grade</div>
+            <input type="number" />
+          </div>
+          <div class="field">
+            <div class="label">Percentage In Bachelors</div>
+            <input type="number" />
+          </div>
+          <div class="field">
+            <div class="label">Percentage In Masters</div>
+            <input type="number" />
+          </div>
+          <div class="field">
+            <button class="prev-3 prev">Previous</button>
+            <button class="next-3 next">Next</button>
+          </div>
+        </div>
+
+        <div class="page page5">
+          <img src="/images/eng.png" alt="" />
+          <div class="title">Competitive Examinations:</div>
+
+          <div class="field">
+            <div class="label">IELTS Score</div>
+
+            <div class="scores">
+              <div name="listening" class="listening">
+                <p>Listening</p>
+                <input type="number" placeholder="6.5" />
+              </div>
+              <div name="speaking" class="speaking">
+                <p>Speaking</p>
+                <input type="number" placeholder="6.5" />
+              </div>
+              <div name="reading" class="reading">
+                <p>Reading</p>
+                <input type="number" placeholder="6.5" />
+              </div>
+              <div name="writing" class="writing">
+                <p>Writing</p>
+                <input type="number" placeholder="6.5" />
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label">GRE/GMAT Score</div>
+            <input type="number" placeholder="320" />
+          </div>
+
+          <div class="field">
+            <div class="label">SAT/ACT Score</div>
+            <input type="number" placeholder="220" />
+          </div>
+
+          <div class="field">
+            <button class="prev-4 prev">Previous</button>
+            <button class="next-4 next">Next</button>
+          </div>
+        </div>
+
+        <div class="page page6">
+          <img src="/images/research.png" alt="" />
+          <div class="title">Additional:</div>
+          <div class="field">
+            <div class="label">How Did You Hear About Us</div>
+            <select name="reference" id="reference">
+              <option value="instagram">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="google">Google</option>
+              <option value="reference">Friends/Relatives</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="label">Remarks</div>
+            <textarea name="" id=""></textarea>
+          </div>
+          <div class="field">
+            <button class="prev-5 prev">Previous</button>
+            <button class="submit">Submit</button>
+          </div>
+        </div>
       </form>
     </div>
-    <div class="image 2">
-      <i class="fa-solid fa-address-book fa-5x"></i>
-    </div>
-    <div class="image 3">
-      <i class="fa-solid fa-graduation-cap fa-5x"></i>
-    </div>
-  
   </div>
-  <!-- <button type="submit">Next</button> -->
-    <button><span>Next</span></button>
+</div>
 
-  <script>
-      const myDiv = document.querySelector("#details");
+<script scr="script.js" type="text/javascript"></script>
 
-      myDiv.addEventListener('click', function() {
-        // specify the action to take when the div is clicked
-        console.log('Div was clicked!');
-      });
-  </script>
-<%- include("footer.ejs");  %>
+<%- include("footer.ejs"); %>
